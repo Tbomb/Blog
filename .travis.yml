@@ -1,6 +1,9 @@
+ language: ruby
+ rvm:
+  - 2.2.5
  deploy:
     provider: s3
-    access_key_id: $AWS_ACCESS_KEY # declared in Travis repo settings
+    access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: tommyharding.me
     endpoint: tommyharding.me.s3-website-us-west-1.amazonaws.com
